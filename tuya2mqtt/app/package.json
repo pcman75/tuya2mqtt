@@ -1,0 +1,24 @@
+{
+  "name": "tuya2mqtt",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pcman75/tuya2mqtt.git"
+  },
+  "author": "Cosmin Manoliu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pcman75/tuya2mqtt/issues"
+  },
+  "homepage": "https://github.com/pcman75/tuya2mqtt#readme",
+  "dependencies": {
+    "log4js": "^6.3.0",
+    "mqtt": "^4.2.6",
+    "tuyapi": "github:codetheweb/tuyapi"
+  }
+}

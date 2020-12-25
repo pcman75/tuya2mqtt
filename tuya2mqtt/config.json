@@ -6,7 +6,19 @@
   "url": "https://github.com/issacg/hassio-addon-devcontainer",
   "startup": "once",
   "boot": "manual",
-  "options": {},
-  "schema": {}, 
+  "options": {
+    "mqtt_server": "homeassistant.local",
+    "mqtt_user": "",
+    "mqtt_pass": "",
+    "tuya_id": "",
+    "tuya_key": ""
+  },
+  "schema": {
+    "mqtt_server": "str",
+    "mqtt_user": "str",
+    "mqtt_pass": "str",
+    "tuya_id": "str",
+    "tuya_key": "str"
+  },
   "arch": ["amd64", "armv7", "armhf", "i386" , "aarch64"]
 }
