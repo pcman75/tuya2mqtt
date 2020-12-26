@@ -1,11 +1,11 @@
 {
-  "name": "Demo Addon",
+  "name": "Tuya 2 MQTT",
   "version": "0.2",
-  "slug": "myaddon",
-  "description": "Add-on that prints 'Hello, world' to the log and exits",
-  "url": "https://github.com/issacg/hassio-addon-devcontainer",
-  "startup": "once",
-  "boot": "manual",
+  "slug": "tuya2mqtt",
+  "description": "Add-on that provides a method for locally controlling IOT devices manufactured by Tuya Inc., and sold under many different brands, via MQTT.",
+  "url": "https://github.com/pcman75/tuya2mqtt",
+  "startup": "application",
+  "boot": "auto",
   "options": {
     "host": "mqtt_server",
     "port": 1883,

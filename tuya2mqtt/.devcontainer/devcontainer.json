@@ -13,16 +13,16 @@
 	"settings": { 
 		"terminal.integrated.shell.linux": "/bin/bash"
 	},
-	"workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/test_hassio/addons/local/myaddon,type=bind,consistency=delegated",
-	"workspaceFolder": "/workspaces/test_hassio/addons/local/myaddon",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/test_hassio/addons/local/tuya2mqtt,type=bind,consistency=delegated",
+	"workspaceFolder": "/workspaces/test_hassio/addons/local/tuya2mqtt",
 	"mounts": [
 		// Cache docker images between devcontainer rebuilds (and share between devcontainers)
 		"source=vsc-hassio-docker,target=/var/lib/docker,type=volume"
-	],
+	]
 
 	// Post-create command to initialize the workspace.  For example, for a node.js add-on you may want:
-	"postCreateCommand": "cd /workspaces/test_hassio/addons/local/myaddon && npm install",
-		"extensions": [
-		"dbaeumer.vscode-eslint"
-	]
+	// "postCreateCommand": "cd /workspaces/test_hassio/addons/local/tuya2mqtt && npm install",
+	// 	"extensions": [
+	// 	"dbaeumer.vscode-eslint"
+	// ]
 }
