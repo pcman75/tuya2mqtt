@@ -7,7 +7,7 @@
   "startup": "application",
   "boot": "auto",
   "options": {
-    "host": "mqtt_server",
+    "host": "core-mosquitto",
     "port": 1883,
     "topic": "tuya/",
     "mqtt_user": "mqtt_user",
