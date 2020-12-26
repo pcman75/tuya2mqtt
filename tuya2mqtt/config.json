@@ -1,24 +1,42 @@
 {
   "name": "Demo Addon",
-  "version": "0.1",
+  "version": "0.2",
   "slug": "myaddon",
   "description": "Add-on that prints 'Hello, world' to the log and exits",
   "url": "https://github.com/issacg/hassio-addon-devcontainer",
   "startup": "once",
   "boot": "manual",
   "options": {
-    "mqtt_server": "homeassistant.local",
-    "mqtt_user": "",
-    "mqtt_pass": "",
-    "tuya_id": "",
-    "tuya_key": ""
+    "host": "mqtt_server",
+    "port": 1883,
+    "topic": "tuya/",
+    "mqtt_user": "mqtt_user",
+    "mqtt_pass": "mqtt_pass",
+    "tuya_devices": [
+      {
+        "name": "Device description",
+        "id": "device id",
+        "ip": "device ip",
+        "version": "3.3",
+        "key": "device key"
+      }
+    ]
   },
   "schema": {
-    "mqtt_server": "str",
+    "host": "str",
+    "port": "int",
+    "topic": "str",
     "mqtt_user": "str",
     "mqtt_pass": "str",
-    "tuya_id": "str",
-    "tuya_key": "str"
+    "tuya_devices": [
+      {
+        "name": "str",
+        "id": "str",
+        "ip": "str",
+        "version": "str",
+        "key": "str"
+      }
+    ]
   },
   "arch": ["amd64", "armv7", "armhf", "i386" , "aarch64"]
 }

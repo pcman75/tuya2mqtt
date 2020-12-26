@@ -3,4 +3,10 @@ set -e
 
 bashio::log.info "==> Starting application"
 
-exec node /app/app.js
+export DEBUG=tuya-mqtt:*
+
+cp /data/options.json tuya-mqtt/config.json
+jq -r .tuya_devices /data/options.json | tee /tuya-mqtt/devices.conf
+cd /tuya-mqtt/
+
+exec node tuya-mqtt.js
